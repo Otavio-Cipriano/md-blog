@@ -1,0 +1,27 @@
+.container{
+    margin: 1rem auto;
+    max-width: 1200px;
+    color: white;
+    background-color: #243447;
+    font-size: 1.1rem;
+    min-height: 90vh;
+    padding:  1rem 3rem;
+    box-sizing: border-box;
+}
+
+.imageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.imageContainer img{
+    width: 100%;
+    max-height: 800px;
+    object-fit: contain;
+}
+
+.container h1{
+    text-align: center;
+}

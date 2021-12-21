@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    padding: 0 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.wrapper{
+    background-color: #243447;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border-bottom: 1px white solid;
+}
+
+.container h2{
+    cursor: pointer;
+}

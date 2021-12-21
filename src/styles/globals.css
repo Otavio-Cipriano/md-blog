@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 5.5rem 0 0 0;
+    background-color: #141d26;
+}
+
+.btn{
+    background: #c51f5d;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 1rem 4rem;
+    justify-self: start;
+    align-self: start;
+    max-width: 150px;
+    text-align: center;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: #b01d54;
+}
