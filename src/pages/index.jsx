@@ -5,30 +5,33 @@ import matter from 'gray-matter';
 import Posts from '../components/Posts/Posts';
 
 
-export default function Home({posts}) {
+export default function Home({ posts }) {
   console.log(posts)
   return (
     <>
       <Head>
-        <title>Dev Blog</title>
+        <title>Dev Blog | take a look at the most recent infos</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"></link>
       </Head>
-      <Posts posts={posts}/>
+      <Posts posts={posts} />
     </>
   )
 }
 
 
-export async function getStaticProps () {
+export async function getStaticProps() {
   const files = fs.readdirSync(path.join('src/posts'))
-  const posts = files.map(filename =>{
+  const posts = files.map(filename => {
 
     const slug = filename.replace('.md', '');
-  
+
     const meta = fs.readFileSync(
       path.join('src/posts', filename),
       'utf-8'
     )
-    const {data: frontmatter} = matter(meta)
+    const { data: frontmatter } = matter(meta)
 
     return {
       slug,
@@ -36,8 +39,8 @@ export async function getStaticProps () {
     }
   })
 
-  return{
-    props:{
+  return {
+    props: {
       posts,
     }
   }

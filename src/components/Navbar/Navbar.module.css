@@ -11,7 +11,8 @@
     position: fixed;
     width: 100%;
     top: 0;
-    border-bottom: 1px white solid;
+    /* border-bottom: 1px white solid; */
+    z-index: 99;
 }
 
 .container h2{

@@ -11,11 +11,12 @@ export default function PostCard({ post, first }) {
                     <img src={post.frontmatter.cover_image} alt="post image" />
                 </div>
                 <div className={styles.textContainer}>
+                    <span>Posted at {post.frontmatter.date}</span>
                     <h3>{post.frontmatter.title}</h3>
                     <p>{post.frontmatter.desc}</p>
-                </div>
-                <div className='btn'>
-                    More Details {'>>'}
+                    <div className='btn'>
+                        More Details {'>>'}
+                    </div>
                 </div>
             </div>
         </Link>
