@@ -5,7 +5,7 @@ import Link from 'next/link'
 export default function PostCard({ post, first }) {
     const slug = post.slug
     return (
-        <Link href={'/blog/' + slug}>
+        <Link href={'/blog/' + slug} passHref>
             <div className={`${styles.container} ${first ? styles.first : ''}`}>
                 <div className={styles.imageContainer}>
                     <img src={post.frontmatter.cover_image} alt="post image" />
