@@ -6,13 +6,12 @@ import Posts from '../components/Posts/Posts';
 
 
 export default function Home({ posts }) {
-  console.log(posts)
   return (
     <>
       <Head>
         <title>Dev Blog | take a look at the most recent infos</title>
         <link rel="preconnect" href="https://fonts.googleapis.com"></link>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin></link>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"></link>
       </Head>
       <Posts posts={posts} />
