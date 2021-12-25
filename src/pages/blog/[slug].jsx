@@ -5,11 +5,11 @@ import matter from 'gray-matter'
 import {marked} from 'marked'
 import PostBody from '../../components/PostBody/PostBody';
 
-export default function PostPage({frontmatter: {title, date, cover_image}, slug, content}) {
+export default function PostPage({frontmatter: {title, date, cover_image}, slug, post}) {
     return (
         <div>
             <PostBody title={title} cover_image={cover_image} date={date}>
-                <div dangerouslySetInnerHTML={{__html: marked(content)}}></div>
+                <div dangerouslySetInnerHTML={{__html: post}}></div>
             </PostBody>
         </div>
     )
@@ -36,12 +36,13 @@ export async function getStaticProps({params: {slug}}){
     const markdownMeta = fs.readFileSync(path.join('src/posts', `${slug}.md`), 'utf-8')
     
     const {data: frontmatter, content} = matter(markdownMeta)
+    const post = marked(content)
     
     return{
         props: {
             frontmatter,
             slug,
-            content
+            post
         }
     }
 }
