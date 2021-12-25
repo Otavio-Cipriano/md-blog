@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function PostBody({ children, title, date, cover_image }) {
     return (
         <div className={style.container}>
-            <Link href="/">
+            <Link href="/" passHref>
                 <div className="btn">
                     {'<<'} Go Back
                 </div>
