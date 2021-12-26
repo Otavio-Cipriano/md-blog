@@ -4,6 +4,7 @@ import styles from "./Posts.module.css"
 
 export default function Posts({posts}) {
     return (
+        <>
         <div className={styles.container}>
             {posts.map((post, index) => {
                 return (
@@ -13,5 +14,6 @@ export default function Posts({posts}) {
                 )
             })}
         </div>
+        </>
     )
 }

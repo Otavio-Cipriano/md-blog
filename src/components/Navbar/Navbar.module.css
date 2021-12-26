@@ -1,12 +1,12 @@
 .container{
     display: flex;
     padding: 0 1rem;
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
 }
 
 .wrapper{
-    background-color: #243447;
+    background-color: #4a76ab;
     color: white;
     position: fixed;
     width: 100%;
