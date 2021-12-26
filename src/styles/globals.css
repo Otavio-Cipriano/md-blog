@@ -8,14 +8,14 @@ body{
 }
 
 .btn{
-    background: #c51f5d;
+    background-color: #4a76ab;
     padding: 10px;
     border-radius: 5px;
     width: 150px;
     text-align: center;
+    color: white;
 }
 
 .btn:hover{
     cursor: pointer;
-    background-color: #b01d54;
 }

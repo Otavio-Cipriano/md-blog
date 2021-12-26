@@ -7,10 +7,14 @@
     border-radius: 5px;
     max-height: 650px;
     min-height: 650px;
+    transition: all .1.5s ease-in-out;
+    padding: 10px;
 }
 
 .container:hover{
     cursor: pointer;
+    transform: scale(1.01);
+    background-color: #f0f0f0;
 }
 
 .imageContainer{
@@ -63,6 +67,10 @@
     min-height: 30px;
     border-radius: 18px;
     align-self: flex-end;
+}
+
+.textContainer div:hover{
+    color: rgb(105, 105, 105);
 }
 
 
